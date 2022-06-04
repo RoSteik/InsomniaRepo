@@ -9,10 +9,7 @@ public class InsomniaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InsomniaApplication.class, args);
-
-//        DataService dt = new DataService();
-//        String text = dt.getTextFromFile();
-//        System.out.println(dt.lastDataBlock(text));
     }
 
 }
+

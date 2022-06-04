@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/all")
 public class DataController {
@@ -38,26 +39,15 @@ public class DataController {
 
     @GetMapping("/gps")
     public String getGPS_Data() {
-//        String[] text = dataService.divOnBlocks(dataService.getTextFromFile());
-//        String[] result = new String[text.length*9];
-//
-//        int i=0;
-//        for (String dataBlock: text) {
-//            for (int j = 0; j < 9; j++) {
-//                result[i+j] = dataService.divOnGPS_DataBlocks(dataBlock)[j];
-//            }
-//            i+=8;
-//        }
-
         return dataService.lastDataBlock(dataService.getTextFromFile());
     }
 
-//    @GetMapping("/date-time")
-//    public String[] getDateTime() {
-//        String[] text = dataService.divOnBlocks(dataService.getTextFromFile());
-//        String result = dataService.
-//        return result;
-//    }
+    @GetMapping("/index")
+    public String getDataFromHtml() {
+        return dataService.findDataFromHtml();
+    }
+
+
 
 }
 
