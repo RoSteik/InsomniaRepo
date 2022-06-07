@@ -23,7 +23,6 @@ public class DataController {
         this.dataService = dataService;
     }
 
-
     @GetMapping("/accel")
     public String[] getAccelData() {
         String[] text = dataService.divOnBlocks(dataService.getTextFromFile());

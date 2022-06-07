@@ -26,12 +26,13 @@ public class DataService {
         String text = null;
 
         try (Scanner scanner = new Scanner(file)) {
+
             StringBuilder result = new StringBuilder();
             while (scanner.hasNextLine()) {
                 result.append(scanner.nextLine()).append("\n");
             }
-
             text = result.toString();
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -802,7 +802,7 @@ Gyro X: -0.07 rad/s Y: 0.02 rad/sZ: 0.02 rad/s
 
 satelits - 0
 horizontal accuracy - 100.0
-latitude and longitude - ****ти**  / ***********
+latitude and longitude - ******  / ***********
 date and time - 00/00/2000 00:00:00 731
 altitude  ******
 Direction of movement (compass) - ******

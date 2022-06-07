@@ -1,6 +1,6 @@
 package iot.lviv.ua.insomnia;
 
-import iot.lviv.ua.insomnia.logic.DataService;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
